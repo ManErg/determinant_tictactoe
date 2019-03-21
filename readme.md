@@ -1,13 +1,15 @@
 # Determinant Tic-Tac-Toe
 ##### Ian Miller
 ##### Spring, 2018
-#
+
+
 Determinant Tic-Tac-Toe(DT) was a game designed to be a math challenge. In the game, two players will take turns marking out fields in a 3x3 matrix, much in the style of tic-tac-toe. The catch, however, is that
 neither player is aiming for three-in-a-row of 'x's or 'o's. Rather, each player will mark their fields with '1's or '0's respectively. The player writing down '1's aims for the matrix to have a determinant of 1, after all fields have been filled. This player wins if she succeeds and loses otherwise.
 
 
 Given a finite number of outcomes and set number of turns, DT is probably not a fair game. The question is to prove which player has an advantage. In addition to providing a pure math answer, I saw DT as an opportunity to practice finding solutions to abstract problems.
-#
+
+
 ##### Methodology
 This methodology of this solution is to exhaustivbely play iteratively through every possible scenario of just one strategy for one player. If every game turned up winning for the tested strategy, then the player able to utilize it has a decisize advantage; he will always win if he plays correctly. There may be more winning strategies, but finding even one is sufficient.
 
@@ -39,5 +41,5 @@ StrategyTTO is a Strategy. It initializes move containers appropriately for DT.
 
 ControlStrategyTTO and TestStrategyTTO inherit from StrategyTTO and return the best moves for any given game state. ControlStrategyTTO should return all legal moves using an iterator.
 
-When the solution is run, an instance of each strategy is initialized and used to construct a TwoPlayerSimulator.# Determinant Tic-Tac-Toe
+When the solution is run, an instance of each strategy is initialized and used to construct a TwoPlayerSimulator.
 
